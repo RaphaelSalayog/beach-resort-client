@@ -72,11 +72,9 @@ const Section3 = () => {
 
                 <div className="grid grid-cols-3 items-center mt-9">
                     <Image
-                        src={
-                            "https://dkthealth.com.ph/midcon2025/assets/img/home-03/about/ab-shape-img.png"
-                        }
-                        width={140}
-                        height={140}
+                        src={"/wheel.svg"}
+                        width={250}
+                        height={250}
                         alt="shape"
                         className="col-span-1 justify-self-center animate-rotate"
                     />

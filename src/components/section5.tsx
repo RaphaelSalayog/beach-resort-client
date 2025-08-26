@@ -8,7 +8,7 @@ const Section5 = () => {
 
     const { scrollYProgress } = useScroll({
         target: ref,
-        offset: ["start center", "50% 50%"],
+        offset: ["start center", "100% 50%"],
     });
 
     const bgPos0 = useTransform(scrollYProgress, [0, 1], ["100% 0%", "0% 0%"]);

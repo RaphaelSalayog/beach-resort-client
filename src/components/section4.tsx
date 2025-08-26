@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
@@ -19,8 +20,17 @@ const Section4 = () => {
         <section ref={ref} className="min-h-[200vh] flex justify-center">
             <motion.div
                 style={{ width, height }}
-                className="bg-black rounded-xl sticky top-[120px]"
-            />
+                className="sticky top-[120px] rounded-xl overflow-hidden"
+            >
+                <video
+                    src="/beach-resort.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover"
+                />
+            </motion.div>
         </section>
     );
 };

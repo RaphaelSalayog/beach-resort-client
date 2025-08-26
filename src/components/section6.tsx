@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
@@ -19,12 +20,29 @@ const Section6 = () => {
             <motion.div className="sticky top-[200px] w-1/4 flex flex-col items-center text-center rounded-xl leading-[95px] mt-[170px]">
                 <motion.div
                     style={{ translateX: translateRight }}
-                    className="absolute h-[120%] w-[120%] rounded-xl bg-red-500 translate-x-10 rotate-2 z-10"
-                />
+                    className="absolute inline-block rounded-xl overflow-hidden translate-x-10 rotate-2 z-10"
+                >
+                    <Image
+                        src="/brochure.svg"
+                        width={500}
+                        height={500}
+                        alt="brochure"
+                        className="w-full h-auto object-contain"
+                    />
+                </motion.div>
+
                 <motion.div
                     style={{ translateX: translateLeft }}
-                    className="absolute h-[120%] w-[120%] rounded-xl bg-black -translate-x-10 -rotate-2 z-10"
-                />
+                    className="absolute inline-block rounded-xl overflow-hidden -translate-x-10 -rotate-2 z-10"
+                >
+                    <Image
+                        src="/brochure.svg"
+                        width={500}
+                        height={500}
+                        alt="brochure"
+                        className="w-full h-auto object-contain"
+                    />
+                </motion.div>
 
                 <p className="text-lg mb-30">MID-CON 2025</p>
                 <p className="text-[90px] mb-7">
